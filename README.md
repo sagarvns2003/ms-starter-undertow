@@ -1,2 +1,2 @@
-# ms-starter-undertow
-Micro service app without Spring boot
+# ms-starter-undertow  (without Spring boot)
+This microservice is using undertow as embedded servlet container.
