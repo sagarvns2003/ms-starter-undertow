@@ -60,7 +60,7 @@ public class AppStarter {
 			Stream.generate(() -> {
 				try {
 					List<String> orderBatch = Lists.newArrayList();
-					Queues.drain(MyChannel.orderChannel, orderBatch, 50000, Duration.ofMillis(200));
+					Queues.drain(MyChannel.orderChannel, orderBatch, 100, Duration.ofMillis(200));
 					return orderBatch;
 				} catch (Exception e) {
 					System.err.print(e.getMessage());
